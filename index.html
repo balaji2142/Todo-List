@@ -187,6 +187,17 @@
      localStorage.setItem('itemsJson', JSON.stringify(itemsArray))
      populate();
    }
+    
+          let d;
+      let t;
+      setInterval(clock, 1000);
+
+      function clock() {
+        let today = new Date();
+        t = today.toLocaleTimeString();
+        d = today.toLocaleDateString();
+        document.getElementById("date&time").innerHTML = d + " on " + t;
+      }
   </script>
 </body>
 </html>

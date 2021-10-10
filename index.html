@@ -198,6 +198,10 @@
         d = today.toLocaleDateString();
         document.getElementById("date&time").innerHTML = d + " on " + t;
       }
+    
+     if (t == '12:00:00 AM') {
+        cleared();
+      }
   </script>
 </body>
 </html>
